@@ -1,9 +1,11 @@
 #include "parse_string.hpp"
-#include "parse_string.cpp"
+#include <iostream>
+
 using namespace std;
 int main() {
     string film;
-    cin >> film;
+    cout << "Enter movie title and season: ";
+    getline(cin,film);
     Movie movie = parse_string(film);
 
 
